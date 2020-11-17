@@ -40,6 +40,7 @@ updates_key.pem
 *.swp
 test/local_parameters.json
 .tox
+youtube-dl
 youtube-dl.zsh
 
 # IntelliJ related files
