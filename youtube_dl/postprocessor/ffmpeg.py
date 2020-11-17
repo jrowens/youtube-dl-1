@@ -219,8 +219,8 @@ class FFmpegPostProcessor(PostProcessor):
             ])
         cmd = [encodeFilename(self.executable, True), encodeArgument('-y')]
         # avconv does not have repeat option
-        if self.basename == 'ffmpeg':
-            cmd += [encodeArgument('-loglevel'), encodeArgument('repeat+info')]
+        # if self.basename == 'ffmpeg':
+        #     cmd += [encodeArgument('-loglevel'), encodeArgument('repeat+info')]
         cmd += (files_cmd
                 + [encodeArgument(o) for o in opts]
                 + [encodeFilename(self._ffmpeg_filename_argument(out_path), True)])
