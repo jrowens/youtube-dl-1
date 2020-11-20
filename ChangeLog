@@ -1,3 +1,39 @@
+version 2020.11.19
+
+Core
+* [extractor/common] Output error for invalid URLs in _is_valid_url (#21400,
+  #24151, #25617, #25618, #25586, #26068, #27072)
+
+Extractors
+* [youporn] Fix upload date extraction
+* [youporn] Make comment count optional (#26986)
+* [arte] Rework extractors
+    * Reimplement embed and playlist extractors to delegate to the single
+      entrypoint artetv extractor
+    * Improve embeds detection (#27057)
++ [arte] Extract m3u8 formats (#27061)
+* [mgtv] Fix format extraction (#26415)
++ [lbry] Add support for odysee.com (#26806)
+* [francetv] Improve info extraction
++ [francetv] Add fallback video URL extraction (#27047)
+
+
+version 2020.11.18
+
+Extractors
+* [spiegel] Fix extraction (#24206, #24767)
+* [youtube] Improve extraction
+    + Add support for --no-playlist (#27009)
+    * Improve playlist and mix extraction (#26390, #26509, #26534, #27011)
+    + Extract playlist uploader data
+* [youtube:tab] Fix view count extraction (#27051)
+* [malltv] Fix extraction (#27035)
++ [bandcamp] Extract playlist description (#22684)
+* [urplay] Fix extraction (#26828)
+* [youtube:tab] Fix playlist title extraction (#27015)
+* [youtube] Fix chapters extraction (#26005)
+
+
 version 2020.11.17
 
 Core
