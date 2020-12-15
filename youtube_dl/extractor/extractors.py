@@ -91,10 +91,6 @@ from .bbc import (
     BBCCoUkPlaylistIE,
     BBCIE,
 )
-from .beampro import (
-    BeamProLiveIE,
-    BeamProVodIE,
-)
 from .beeg import BeegIE
 from .behindkink import BehindKinkIE
 from .bellmedia import BellMediaIE
@@ -534,7 +530,10 @@ from .laola1tv import (
     EHFTVIE,
     ITTFIE,
 )
-from .lbry import LBRYIE
+from .lbry import (
+    LBRYIE,
+    LBRYChannelIE,
+)
 from .lci import LCIIE
 from .lcp import (
     LcpPlayIE,
@@ -726,7 +725,10 @@ from .nexx import (
     NexxEmbedIE,
 )
 from .nfl import NFLIE
-from .nhk import NhkVodIE
+from .nhk import (
+    NhkVodIE,
+    NhkVodProgramIE,
+)
 from .nhl import NHLIE
 from .nick import (
     NickIE,
@@ -1042,12 +1044,6 @@ from .sky import (
 from .slideshare import SlideshareIE
 from .slideslive import SlidesLiveIE
 from .slutload import SlutloadIE
-from .smotri import (
-    SmotriIE,
-    SmotriCommunityIE,
-    SmotriUserIE,
-    SmotriBroadcastIE,
-)
 from .snotr import SnotrIE
 from .sohu import SohuIE
 from .sonyliv import SonyLIVIE
@@ -1152,6 +1148,7 @@ from .telequebec import (
     TeleQuebecSquatIE,
     TeleQuebecEmissionIE,
     TeleQuebecLiveIE,
+    TeleQuebecVideoIE,
 )
 from .teletask import TeleTaskIE
 from .telewebion import TelewebionIE
@@ -1224,6 +1221,10 @@ from .tv2dk import (
 from .tv2hu import TV2HuIE
 from .tv4 import TV4IE
 from .tv5mondeplus import TV5MondePlusIE
+from .tv5unis import (
+    TV5UnisVideoIE,
+    TV5UnisIE,
+)
 from .tva import (
     TVAIE,
     QubIE,
